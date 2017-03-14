@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://www.jq22.com/demo/jQuery-page-141201201459/js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="http://7xio74.com2.z0.glb.qiniucdn.com/jquery-1.4.2.js"></script>-->
+    <link rel="stylesheet" href="../plug-in/paging/paging.css">
+    <script src="../plug-in/paging/paging.js"></script>
+</head>
+<body>
+<div class="tcdPageCode"></div>
+</body>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:100,
+        current:1,
+        backFn:function(p){
+            //单击回调方法，p是当前页码
+            console.log(p);
+        }
+    });
+//    pageCount:10;//总页数
+//    current:1;//当前页
+    </script>
+</html>
